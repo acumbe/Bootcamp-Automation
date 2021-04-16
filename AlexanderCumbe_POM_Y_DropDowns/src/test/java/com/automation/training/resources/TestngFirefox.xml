@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My test suite" verbose="1">
+
+	<listeners>
+		<listener class-name="com.automation.training.Listener.MyListener"></listener>
+	</listeners>
+
+	<parameter name="browser" value="firefox"/>
+	
+	<test name="My ESPN Tests">
+		<classes>
+			<class name="com.automation.training.tests.TestDropDowns"></class>
+		</classes>
+	
+	</test>
+
+</suite>
