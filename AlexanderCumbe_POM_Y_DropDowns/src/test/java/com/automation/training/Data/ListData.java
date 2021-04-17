@@ -10,11 +10,22 @@ import org.testng.annotations.DataProvider;
 public class ListData {
     
     @DataProvider(name="selectOptionList")
-
     public static Object [][] inputDataList () {
         return new Object [][] 
         {
-            {"Sunday","Day selected :- Sunday"}
+            {"Sunday","Day selected :- Sunday"},
+            {"Tuesday","Day selected :- Tuesday"},
+            {"Friday","Day selected :- Friday"}
+        };
+    }
+
+    @DataProvider(name="multiSeletList")
+    public static Object [][] inputDataMultiList () {
+        return new Object [][] 
+        {
+            {"Florida","First selected option is : Florida"},
+            {"Texas","First selected option is : Texas"},
+            {"New York","First selected option is : New York"}
         };
     }
 

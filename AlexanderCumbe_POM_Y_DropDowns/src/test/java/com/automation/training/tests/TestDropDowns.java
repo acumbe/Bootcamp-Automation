@@ -2,7 +2,6 @@ package com.automation.training.tests;
 
 import com.automation.training.pages.HomePage;
 import com.automation.training.Data.ListData;
-import com.automation.training.Data.MultiListData;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -33,7 +32,7 @@ public class TestDropDowns extends BaseTests {
      * @param city
      * @param spected
      */
-    @Test(dataProvider = "multiSeletList", dataProviderClass = MultiListData.class)
+    @Test(dataProvider = "multiSeletList", dataProviderClass = ListData.class)
     public void testMultiSelect(String city, String spected){
         HomePage home = getHomePage();
         String citySelected = home.getTexMultiSelect(city);
